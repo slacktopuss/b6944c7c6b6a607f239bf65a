@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Starter Template · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/starter-template/">
+
+    
+
+    
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+   <body>
+    
+<div class="col-lg-8 mx-auto p-4 py-md-5">
+
+
+  <main>
+    <h1>Подключение к сетевой папке</h1>
+    <p class="fs-5 col-md-8">Для подключения к сетевой папке необходимо получить у администратора логин и пароль. Также требуется скачать и установить программу OpenVPN Connect.</p>
+    <div class="mb-5">
+      <a href="https://openvpn.net/downloads/openvpn-connect-v3-windows.msi" class="btn btn-primary btn-lg px-4">Скачать OpenVPN Connect V3</a>
+	  <p class="text-muted"><br>Для Windows 7, 8, 10 и 11.</p>
+    </div>
+	<p>Если у вас 32-битная версия Windows — воспользуйтесь этой ссылкой:</p>
+	<p><a href="https://openvpn.net/downloads/openvpn-connect-v3-windows-x86.msi" rel="noopener" target="_blank">Скачать OpenVPN Connect V3 (32-битная версия)</a></p>
+
+    <hr class="col-3 col-md-2 mb-5">
+
+    <div class="row g-5">
+	
+		
+		
+      <div class="col-md-12">
+        <h2>После установки OpenVPN Connect</h2>
+        <ul class="icon-list ps-0">
+          <li class="d-flex align-items-start mb-1">Закройте окно "How to import"</li>
+          <li class="d-flex align-items-start mb-1">В следующем окне нажмите AGREE</li>
+        </ul>
+		<img src="assets/img/901.png" class="img-fluid" alt="...">
+		
+		<br>
+		<ul class="icon-list ps-0">
+		<br>
+        <li class="d-flex align-items-start mb-1">Закройте окно "Updates", нажав OK</li>
+        <li class="d-flex align-items-start mb-1">В строке URL введите адрес сервера: <span>&nbsp;</span><span id="902" class="text-muted">https://vpn01.fastcom.pro</span><span>&nbsp;</span><button onclick="copyToClipboard('#902')" type="button" class="btn btn-outline-secondary"
+style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button><br></li>
+		<li class="d-flex align-items-start mb-1">После этого нажмите NEXT</li>
+        </ul>
+		<img src="assets/img/902.png" class="img-fluid" alt="...">
+		
+		<br>
+		<ul class="icon-list ps-0">
+		<br>
+        <li class="d-flex align-items-start mb-1">Если появится предупреждение "Certificate error", просто нажмите Accept</li>
+        </ul>
+		<img src="assets/img/903.png" class="img-fluid" alt="...">
+		
+		<br>
+		<ul class="icon-list ps-0">
+		<br>
+        <li class="d-flex align-items-start mb-1">В строке "Username" введите свой логин, полученный у системного администратора</li>
+		<li class="d-flex align-items-start mb-1">В строке "Password" введите (а лучше скопируйте, без пробелов и лишних символов) свой пароль</li>
+		<li class="d-flex align-items-start mb-1">Следующие две строки ("Profile Name" и "Port") можно не трогать, оставьте как есть</li>
+		<li class="d-flex align-items-start mb-1">Далее поставьте метки в чекбоксах "Import autologin" и "Connect after import" </li>
+		<li class="d-flex align-items-start mb-1">Нажмите кнопку IMPORT</li>
+        </ul>
+		<img src="assets/img/904.png" class="img-fluid" alt="...">
+		
+		<br>
+		<ul class="icon-list ps-0">
+		<br>
+        <li class="d-flex align-items-start mb-1">Если опять появится "Certificate error", нажмите Accept</li>
+		<li class="d-flex align-items-start mb-1">При успешном подключении откроется окно с надписью CONNECTED</li>
+		<li class="d-flex align-items-start mb-1">Теперь программу можно закрыть или свернуть, она продолжит работать в фоне</li>
+        </ul>
+		<img src="assets/img/905.png" class="img-fluid" alt="...">
+		
+		<br>
+		<ul class="icon-list ps-0">
+		<br>
+        <li class="d-flex align-items-start mb-1">Для быстрого доступа к сетевой папке рекомендую создать ярлык на рабочем столе</li>
+        </ul>
+		<img src="assets/img/906.png" class="img-fluid" alt="...">
+		
+		<br>
+		<ul class="icon-list ps-0">
+		<br>
+        <li class="d-flex align-items-start mb-1">В открывшемся окне надо прописать адрес сетевой папки: <span>&nbsp;</span><span id="907" class="text-muted">\\10.10.35.188\сетевая папка</span><span>&nbsp;</span><button onclick="copyToClipboard('#907')" type="button" class="btn btn-outline-secondary"
+style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button><br></li>
+		<li class="d-flex align-items-start mb-1">Нажмите "Далее", чтобы продолжить</li>
+        </ul>
+		<img src="assets/img/907.png" class="img-fluid" alt="...">
+		
+		<br>
+		<ul class="icon-list ps-0">
+		<br>
+        <li class="d-flex align-items-start mb-1">Во избежание путаницы в названии лучше указать, что это именно удаленный (не локальный) доступ</li>
+        </ul>
+		<img src="assets/img/908.png" class="img-fluid" alt="...">
+		
+		<br>
+		<ul class="icon-list ps-0">
+		<br>
+        <li class="d-flex align-items-start mb-1">Появившийся ярлык работает ТОЛЬКО при запущенном подключении OpenVPN Connect</li>
+		<li class="d-flex align-items-start mb-1">Соединение должно быть поднято как на серверном компьютере, так и на вашем ПК</li>
+        </ul>
+		<img src="assets/img/909.png" class="img-fluid" alt="...">
+		
+		<br>
+		<ul class="icon-list ps-0">
+		<br>
+        <li class="d-flex align-items-start mb-1">При пером использовании, Windows попросит логин и пароль для доступа к сетевой папке</li>
+		<li class="d-flex align-items-start mb-1">Логин: <span>&nbsp;</span><span id="9091" class="text-muted">OLGA</span><span>&nbsp;</span><button onclick="copyToClipboard('#9091')" type="button" class="btn btn-outline-secondary"
+style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button><span>&nbsp;</span>и пароль: <span>&nbsp;</span><span id="9092" class="text-muted">1505</span><span>&nbsp;</span><button onclick="copyToClipboard('#9092')" type="button" class="btn btn-outline-secondary"
+style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button><span>&nbsp;</span> (не путать с логином и паролем от VPN!)</li>
+        </ul>
+		<img src="assets/img/910.png" class="img-fluid" alt="...">
+		
+		<br>
+		
+        
+      </div>
+	  <h3>Приятного пользования!</h3>
+
+
+    </div>
+  </main>
+  <footer class="pt-5 my-5 text-muted border-top">
+    Доступ работает в тестовом режиме. О проблемах и неполадках сообщайте по адресу: mailbox@fastcom.pro
+  </footer>
+</div>
+
+  </body>
+</html>
