@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
-    <title>Starter Template · Bootstrap v5.2</title>
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Подключение к сетевой папке</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/starter-template/">
 
@@ -107,7 +107,7 @@ function copyToClipboard(element) {
 		
 		
       <div class="col-md-12">
-        <h2>После установки OpenVPN Connect</h2>
+        <h3>После установки OpenVPN Connect</h3>
         <ul class="icon-list ps-0">
           <li class="d-flex align-items-start mb-1">Закройте окно "How to import"</li>
           <li class="d-flex align-items-start mb-1">В следующем окне нажмите AGREE</li>
@@ -118,16 +118,16 @@ function copyToClipboard(element) {
 		<ul class="icon-list ps-0">
 		<br>
         <li class="d-flex align-items-start mb-1">Закройте окно "Updates", нажав OK</li>
-        <li class="d-flex align-items-start mb-1">В строке URL введите адрес сервера: <span>&nbsp;</span><span id="902" class="text-muted">https://vpn01.fastcom.pro</span><span>&nbsp;</span><button onclick="copyToClipboard('#902')" type="button" class="btn btn-outline-secondary"
-style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button><br></li>
-		<li class="d-flex align-items-start mb-1">После этого нажмите NEXT</li>
+        <li class="d-flex align-items-start mb-1">В строке URL введите адрес сервера и нажмите NEXT</li>
+		<li class="d-flex align-items-start mb-1"><span id="902" class="text-muted">https://vpn01.fastcom.pro</span><span>&ensp;</span><button onclick="copyToClipboard('#902')" type="button" class="btn btn-outline-secondary"
+style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button></li>
         </ul>
 		<img src="assets/img/902.png" class="img-fluid" alt="...">
 		
 		<br>
 		<ul class="icon-list ps-0">
 		<br>
-        <li class="d-flex align-items-start mb-1">Если появится предупреждение "Certificate error", просто нажмите Accept</li>
+        <li class="d-flex align-items-start mb-1">При появлении предупреждения "Certificate error", просто нажмите Accept</li>
         </ul>
 		<img src="assets/img/903.png" class="img-fluid" alt="...">
 		
@@ -137,16 +137,15 @@ style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size
         <li class="d-flex align-items-start mb-1">В строке "Username" введите свой логин, полученный у системного администратора</li>
 		<li class="d-flex align-items-start mb-1">В строке "Password" введите (а лучше скопируйте, без пробелов и лишних символов) свой пароль</li>
 		<li class="d-flex align-items-start mb-1">Следующие две строки ("Profile Name" и "Port") можно не трогать, оставьте как есть</li>
-		<li class="d-flex align-items-start mb-1">Далее поставьте метки в чекбоксах "Import autologin" и "Connect after import" </li>
-		<li class="d-flex align-items-start mb-1">Нажмите кнопку IMPORT</li>
+		<li class="d-flex align-items-start mb-1">Поставьте метки в двух чекбоксах и нажмите IMPORT</li>
         </ul>
 		<img src="assets/img/904.png" class="img-fluid" alt="...">
 		
 		<br>
 		<ul class="icon-list ps-0">
 		<br>
-        <li class="d-flex align-items-start mb-1">Если опять появится "Certificate error", нажмите Accept</li>
-		<li class="d-flex align-items-start mb-1">При успешном подключении откроется окно с надписью CONNECTED</li>
+        <li class="d-flex align-items-start mb-1">При повторном появлении "Certificate error", нажмите Accept</li>
+		<li class="d-flex align-items-start mb-1">Если все сделали правильно, откроется окно с надписью CONNECTED</li>
 		<li class="d-flex align-items-start mb-1">Теперь программу можно закрыть или свернуть, она продолжит работать в фоне</li>
         </ul>
 		<img src="assets/img/905.png" class="img-fluid" alt="...">
@@ -154,23 +153,24 @@ style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size
 		<br>
 		<ul class="icon-list ps-0">
 		<br>
-        <li class="d-flex align-items-start mb-1">Для быстрого доступа к сетевой папке рекомендую создать ярлык на рабочем столе</li>
+        <li class="d-flex align-items-start mb-1">Для быстрого доступа к сетевой папке можно создать ярлык на рабочем столе</li>
         </ul>
 		<img src="assets/img/906.png" class="img-fluid" alt="...">
 		
 		<br>
 		<ul class="icon-list ps-0">
 		<br>
-        <li class="d-flex align-items-start mb-1">В открывшемся окне надо прописать адрес сетевой папки: <span>&nbsp;</span><span id="907" class="text-muted">\\10.10.35.188\сетевая папка</span><span>&nbsp;</span><button onclick="copyToClipboard('#907')" type="button" class="btn btn-outline-secondary"
-style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button><br></li>
-		<li class="d-flex align-items-start mb-1">Нажмите "Далее", чтобы продолжить</li>
+        <li class="d-flex align-items-start mb-1">В открывшемся окне пропишите адрес сетевой папки</li>
+		<li class="d-flex align-items-start mb-1"><span id="907" class="text-muted">\\10.10.35.188\сетевая папка</span><span>&nbsp;</span><button onclick="copyToClipboard('#907')" type="button" class="btn btn-outline-secondary"
+style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button></li>
+		<li class="d-flex align-items-start mb-1">И нажмите "Далее", чтобы продолжить</li>
         </ul>
 		<img src="assets/img/907.png" class="img-fluid" alt="...">
 		
 		<br>
 		<ul class="icon-list ps-0">
 		<br>
-        <li class="d-flex align-items-start mb-1">Во избежание путаницы в названии лучше указать, что это именно удаленный (не локальный) доступ</li>
+        <li class="d-flex align-items-start mb-1">В названии лучше прямо указать, что это именно удаленный (не локальный) доступ к папке</li>
         </ul>
 		<img src="assets/img/908.png" class="img-fluid" alt="...">
 		
@@ -178,17 +178,18 @@ style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size
 		<ul class="icon-list ps-0">
 		<br>
         <li class="d-flex align-items-start mb-1">Появившийся ярлык работает ТОЛЬКО при запущенном подключении OpenVPN Connect</li>
-		<li class="d-flex align-items-start mb-1">Соединение должно быть поднято как на серверном компьютере, так и на вашем ПК</li>
+		<li class="d-flex align-items-start mb-1">Соединение должно быть поднято как на сервере (в офисе), так и на вашем ПК</li>
         </ul>
 		<img src="assets/img/909.png" class="img-fluid" alt="...">
 		
 		<br>
 		<ul class="icon-list ps-0">
 		<br>
-        <li class="d-flex align-items-start mb-1">При пером использовании, Windows попросит логин и пароль для доступа к сетевой папке</li>
+        <li class="d-flex align-items-start mb-1">При пером использовании, Windows просит логин и пароль для доступа к сетевой папке</li>
 		<li class="d-flex align-items-start mb-1">Логин: <span>&nbsp;</span><span id="9091" class="text-muted">OLGA</span><span>&nbsp;</span><button onclick="copyToClipboard('#9091')" type="button" class="btn btn-outline-secondary"
-style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button><span>&nbsp;</span>и пароль: <span>&nbsp;</span><span id="9092" class="text-muted">1505</span><span>&nbsp;</span><button onclick="copyToClipboard('#9092')" type="button" class="btn btn-outline-secondary"
-style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button><span>&nbsp;</span> (не путать с логином и паролем от VPN!)</li>
+style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button><span>&ensp;</span> пароль: <span>&ensp;</span><span id="9092" class="text-muted">1505</span><span>&nbsp;</span><button onclick="copyToClipboard('#9092')" type="button" class="btn btn-outline-secondary"
+style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">КОПИРОВАТЬ</button></li>
+		<li class="d-flex align-items-start mb-1">Не путать с логином и паролем от программы OpenVPN Connect!</li>
         </ul>
 		<img src="assets/img/910.png" class="img-fluid" alt="...">
 		
@@ -196,7 +197,7 @@ style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size
 		
         
       </div>
-	  <h3>Приятного пользования!</h3>
+	  <h3>Приятного пользования :-)</h3>
 
 
     </div>
